@@ -19,6 +19,7 @@ const Navigation = () => {
                       className={ ({ isActive }) => isActive ? 'nav-active' : '' }>
                       {name}
                     </NavLink>
+
                   </li>
                 ))
               }
