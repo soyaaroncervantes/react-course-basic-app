@@ -1,5 +1,6 @@
 import {lazy, LazyExoticComponent} from "react";
 import {NoLazyLoaded} from "../01-lazyload/pages";
+import ShoppingPages from "../02-component-pattern/pages/shopping.pages";
 type JSXElement = () => JSX.Element;
 
 interface Route {
@@ -17,6 +18,12 @@ const Lazy2 = lazy(() => import(/* webpackChunkName: "LazyPage1" */'../01-lazylo
 const Lazy3 = lazy(() => import(/* webpackChunkName: "LazyPage3" */'../01-lazyload/pages/lazy-page-3'));
 
 export const routes: Route[] = [
+  {
+    'to': '/shopping',
+    'path': 'shopping',
+    Component: ShoppingPages,
+    name: 'Shopping page'
+  },
   {
     to: '/lazy1',
     path: 'lazy1',
