@@ -10,7 +10,6 @@ interface Route {
   name: string;
 }
 
-
 const LazyLayout= lazy(() => import(/* webpackChunkName: "LazyLayout" */'../01-lazyload/layout/lazy-layout'));
 
 const Lazy1 = lazy(() => import(/* webpackChunkName: "LazyPage2" */'../01-lazyload/pages/lazy-page-1'));
