@@ -1,0 +1,19 @@
+.bg-dark {
+    background-color: #010101;
+}
+
+.text-white {
+    color: #f1f1f1;
+}
+
+.custom--img {
+    margin: 1rem;
+    inline-size: calc(100% - 2rem);
+    border-radius: 1rem;
+}
+
+.custom--buttons button,
+.custom--buttons span {
+    color: #f1f1f1;
+    border-color: #f1f1f1;
+}

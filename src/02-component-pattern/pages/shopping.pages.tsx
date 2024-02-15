@@ -1,6 +1,6 @@
 import React from 'react';
 import {ProductImage, ProductTitle, ProductButtons, ProductCard} from "../components";
-
+import '../styles/custom-styles.css';
 export const ShoppingPages = () => {
   const productWithNoImage = {
     id: '1',
@@ -32,10 +32,10 @@ export const ShoppingPages = () => {
           <ProductCard.Buttons/>
         </ProductCard>
 
-        <ProductCard product={ productWithImage } >
-          <ProductImage />
-          <ProductTitle/>
-          <ProductButtons/>
+        <ProductCard product={ productWithImage } className="[ bg-dark ] [ text-white ]">
+          <ProductImage className="custom--img"/>
+          <ProductTitle />
+          <ProductButtons className="[ custom--buttons ]"/>
         </ProductCard>
       </div>
     </div>
