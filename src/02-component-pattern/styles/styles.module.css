@@ -1,13 +1,9 @@
 
 
 .productCard {
-    background-color: white;
-    border-radius: 15px;
-    color: black;
-    padding-bottom: 5px;
+    border-radius: 1rem;
+    padding-bottom: .3rem;
     width: 250px;
-    margin-right: 5px;
-    margin-top: 5px;
 }
 
 .productImg {
@@ -20,9 +16,8 @@
 }
 
 .buttonsContainer {
-    margin: 10px;
     display: flex;
-    flex-direction: row;
+    margin: 10px;
 }
 
 .buttonMinus {
@@ -46,6 +41,7 @@
     padding-top: 5px;
     text-align: center;
     width: 30px;
+    margin: 0;
 }
 
 .buttonAdd {

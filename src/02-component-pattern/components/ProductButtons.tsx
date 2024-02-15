@@ -1,14 +1,20 @@
-import React, {useContext} from "react";
-import style from "../styles/styles.module.css";
+import React, {CSSProperties, useContext} from "react";
+import styleModule from "../styles/styles.module.css";
 import {ProductContext} from "./ProductCard";
 
-export const ProductButtons = () => {
+export type Props = {
+  className?: string;
+  style?: CSSProperties;
+}
+export const ProductButtons = ({className, style}: Props) => {
   const {counter, incrementBy} = useContext(ProductContext);
   return (
-    <footer className={style.buttonsContainer}>
-      <button onClick={() => incrementBy(-1)} className={style.buttonMinus}> -</button>
-      <div className={style.countLabel}>{counter}</div>
-      <button onClick={() => incrementBy(+1)} className={style.buttonAdd}> +</button>
+    <footer
+      style={style}
+      className={`${styleModule.buttonsContainer} ${className}`}>
+      <button onClick={() => incrementBy(-1)} className={styleModule.buttonMinus}> -</button>
+      <p className={styleModule.countLabel}>{counter}</p>
+      <button onClick={() => incrementBy(+1)} className={styleModule.buttonAdd}> +</button>
     </footer>
   )
 }

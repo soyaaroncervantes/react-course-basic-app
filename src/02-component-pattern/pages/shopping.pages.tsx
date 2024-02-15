@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/custom-styles.css';
 import {ProductButtons, ProductCard, ProductImage, ProductTitle} from "../components";
 import shoppingStyles from '../styles/shopping-page.module.css';
+import '../styles/custom-styles.css';
 export const ShoppingPages = () => {
   const productWithNoImage = {
     id: '1',
@@ -20,14 +20,18 @@ export const ShoppingPages = () => {
       <hr/>
       <section className={ shoppingStyles.section }>
 
-        <ProductCard product={ productWithImage }>
-          <ProductImage/>
+        <ProductCard
+          className="card-dark"
+          product={ productWithImage }>
+          <ProductImage className="image-rounded"/>
           <ProductTitle/>
-          <ProductButtons/>
+          <ProductButtons className="buttons"/>
         </ProductCard>
 
-        <ProductCard product={ productWithImage }>
-          <ProductCard.Image/>
+        <ProductCard
+          className="card-light"
+          product={ productWithNoImage }>
+          <ProductCard.Image className="image-rounded"/>
           <ProductCard.Title/>
           <ProductCard.Buttons/>
         </ProductCard>

@@ -1,19 +1,25 @@
-.bg-dark {
-    background-color: #010101;
+.card-dark {
+    background-color: #343a40;
+    color: #e9ecef;
 }
 
-.text-white {
-    color: #f1f1f1;
+.card-light {
+    background-color: #e9ecef;
+    color: #343a40;
 }
 
-.custom--img {
-    margin: 1rem;
-    inline-size: calc(100% - 2rem);
+.image-rounded {
+    box-sizing: border-box;
+    padding: .5rem;
     border-radius: 1rem;
+    object-fit: cover;
+    aspect-ratio: 1;
 }
 
-.custom--buttons button,
-.custom--buttons span {
-    color: #f1f1f1;
-    border-color: #f1f1f1;
+.buttons {
+    display: flex;
+    & button, p {
+        color: inherit;
+        border-color: currentColor;
+    }
 }
