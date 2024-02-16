@@ -3,7 +3,7 @@
 .productCard {
     border-radius: 1rem;
     padding-bottom: .3rem;
-    width: 250px;
+    max-width: 16rem;
 }
 
 .productImg {

@@ -22,3 +22,12 @@ export type ProductCardHOCProps = {
   Title: (props: ProductTitleProps) => JSX.Element;
   (props: ProductCardProps): JSX.Element;
 }
+
+export type OnChangeArgs = {
+  product: Product;
+  count: number;
+}
+
+export type ProductInCart = Product & {
+  count: number;
+}

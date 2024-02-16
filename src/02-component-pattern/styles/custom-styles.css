@@ -3,6 +3,12 @@
     color: #e9ecef;
 }
 
+.card-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .card-light {
     background-color: #e9ecef;
     color: #343a40;
@@ -18,6 +24,7 @@
 
 .buttons {
     display: flex;
+
     & button, p {
         color: inherit;
         border-color: currentColor;
