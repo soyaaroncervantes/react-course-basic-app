@@ -1,5 +1,6 @@
 export * from './AboutPage';
 export * from './HomePage';
+export * from './DynamicFormPage';
 export * from './FormikAbstract';
 export * from './FormikBasicPage';
 export * from './FormikComponents';

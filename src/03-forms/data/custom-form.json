@@ -1,0 +1,67 @@
+[
+  {
+    "type": "text",
+    "name": "firstName",
+    "placeholder": "Aarón",
+    "label": "First Name",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "First Name is required"
+      },
+      {
+        "type": "minLength",
+        "value": 3,
+        "message": "First Name must be at least 3 characters"
+      }
+    ]
+  },
+  {
+    "type": "text",
+    "name": "lastName",
+    "placeholder": "Cervantes",
+    "label": "Last Name",
+    "value": "Cervantes",
+    "validations": [
+      {
+        "type": "required",
+        "message": "Last name is required"
+      }
+    ]
+  },
+  {
+    "type": "email",
+    "name": "email",
+    "placeholder": "user@email.com",
+    "label": "Email",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "Email is required"
+      },
+      {
+        "type": "email",
+        "message": "Email is not valid"
+      }
+    ]
+  },
+  {
+    "type": "select",
+    "name": "favoriteGame",
+    "label": "Favorite Game",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "Select a game"
+      }
+    ],
+    "options": [
+      {"label": "The Legend of Zelda", "value": "zelda", "id": "zelda"},
+      {"label": "Super Mario Bros", "value": "mario", "id": "mario"},
+      {"label": "Super Smash Bros", "value": "smash", "id": "smash"}
+    ]
+  }
+]

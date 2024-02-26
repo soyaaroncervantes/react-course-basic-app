@@ -23,6 +23,7 @@ export const FormikAbstract = () => {
         validationSchema={
           Yup.object({
             name: Yup.string()
+              .min(2, 'Must be 2 characters or more')
               .max(15, 'Must be 15 characters or less')
               .required('Required'),
             lastname: Yup.string()

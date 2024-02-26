@@ -14,10 +14,12 @@ const HomePage = lazy(() => import('../03-forms/pages/HomePage'));
 const AboutPage = lazy(() => import('../03-forms/pages/AboutPage'));
 const UserPage = lazy(() => import('../03-forms/pages/UsersPage'));
 const RegisterPage = lazy(() => import('../03-forms/pages/RegisterPage'));
+const RegisterFormikPage = lazy(() => import('../03-forms/pages/RegisterFormikPage'));
 const FormikBasicPage = lazy(() => import('../03-forms/pages/FormikBasicPage'));
 const FormikYupPage = lazy(() => import('../03-forms/pages/FormikYupPage'));
 const FormikComponents = lazy(() => import('../03-forms/pages/FormikComponents'));
 const FormikAbstract = lazy(() => import('../03-forms/pages/FormikAbstract'));
+const DynamicFormPage = lazy(() => import('../03-forms/pages/DynamicFormPage'));
 
 export const routes: Route[] = [
   {
@@ -25,6 +27,12 @@ export const routes: Route[] = [
     path: 'register',
     Component: RegisterPage,
     name: 'Register'
+  },
+  {
+    to: '/register-formik',
+    path: 'register-formik',
+    Component: RegisterFormikPage,
+    name: 'Register Formik'
   },
   {
     to: '/formik',
@@ -63,9 +71,9 @@ export const routes: Route[] = [
     name: 'About'
   },
   {
-    to: '/users',
-    path: 'users',
-    Component: UserPage,
-    name: 'Users'
+    to: '/dynamic-form',
+    path: 'dynamic-form',
+    Component: DynamicFormPage,
+    name: 'Dynamic Form'
   }
 ]
